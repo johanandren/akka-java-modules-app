@@ -40,7 +40,13 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <mainClass>com.example.Main</mainClass>
+                    <executable>java</executable>
+                    <arguments>
+                        <argument>--module-path</argument>
+                        <modulepath/>
+                        <argument>--module</argument>
+                        <argument>testmodule/com.example.Main</argument>
+                    </arguments>
                 </configuration>
             </plugin>
         </plugins>
